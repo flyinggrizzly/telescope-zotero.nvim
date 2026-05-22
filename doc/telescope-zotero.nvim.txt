@@ -1,4 +1,5 @@
-*telescope-zotero.nvim.txt*   For Neovim >= 0.9.5   Last change: 2026 March 27
+*telescope-zotero.nvim.txt*
+                               For Neovim >= 0.9.5    Last change: 2026 May 22
 
 ==============================================================================
 Table of Contents                    *telescope-zotero.nvim-table-of-contents*
@@ -31,7 +32,7 @@ REQUIREMENTS        *telescope-zotero.nvim-telescope-zotero.nvim-requirements*
 
 SETUP                      *telescope-zotero.nvim-telescope-zotero.nvim-setup*
 
-Add to your telescope config, e.g. in lazy.nvim
+Add to your telescope config, e.g. in lazy.nvim
 
 >lua
     {
