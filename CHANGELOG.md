@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.10.2](https://github.com/jmbuhr/telescope-zotero.nvim/compare/v1.10.1...v1.10.2) (2026-05-22)
+
+
+### Bug Fixes
+
+* support Zotero 8 native citation key storage ([#52](https://github.com/jmbuhr/telescope-zotero.nvim/issues/52)) ([82423e5](https://github.com/jmbuhr/telescope-zotero.nvim/commit/82423e5c63b22edb24135fcb71895a5175e13614))
+
 ## [1.10.1](https://github.com/jmbuhr/telescope-zotero.nvim/compare/v1.10.0...v1.10.1) (2026-03-27)
 
 
