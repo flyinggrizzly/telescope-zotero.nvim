@@ -14,7 +14,23 @@ M.locate_quarto_bib = function()
   for _, line in ipairs(lines) do
     local location = string.match(line, [[bibliography:[ "']*(.+)["' ]*]])
     if location then
-      M['quarto.cached_bib'] = location
+      local resolved_location = location
+
+      local function string_starts_with(str, substr)
+        return string.sub(str,1,string.len(substr)) == substr
+      end
+
+      local function base_name(str)
+        return string.gsub(resolved_location, "./", "", 1)
+      end
+
+      local is_relative_path = string_starts_with(resolved_location, "./")
+      if is_relative_path then
+        local dirname = vim.fs.dirname(vim.fn.expand('%'))
+        return dirname .. '/' .. base_name(resolved_location)
+      end
+
+      M['quarto.cached_bib'] = resolved_location
       return M['quarto.cached_bib']
     end
   end
